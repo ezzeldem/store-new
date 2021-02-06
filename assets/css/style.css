@@ -1130,6 +1130,7 @@ html[dir="rtl"] .beauty-section .beauty-slider .beauty-slider-item .img-box .bea
   background-position: center;
   padding: 150px 0;
   margin: 40px 0 0;
+  overflow: hidden;
 }
 
 .newsletter-section .newsletter-box {
