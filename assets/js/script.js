@@ -51,11 +51,17 @@ $(document).ready(function () {
   });
 
   // opne sub-menu
-  $('.nav-section .nav-box2 .nav-side-box').click(function () {
+  $(document).click(function(){
+    $('.sub-box').slideUp();
+  });
+  $('.nav-section .nav-box2 .nav-side-box').click(function(e){
+    e.stopPropagation();
     $(this).children('.sub-box').slideToggle().parent().siblings().children('.sub-box').slideUp();
   });
-
-
+  $('.sub-box').click(function(sisplaySlide){
+    sisplaySlide.stopPropagation();
+  });
+  
   // intro-slider
   $('.intro-slider').slick({
     slidesToShow: 1,
